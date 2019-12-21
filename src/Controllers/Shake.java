@@ -1,4 +1,4 @@
-package sample;
+package Controllers;
 import javafx.animation.TranslateTransition;
 import javafx.scene.Node;
 import javafx.util.Duration;

@@ -6,43 +6,61 @@ import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.RadioButton;
 import javafx.scene.control.TextField;
+import sample.Members;
+import sample.User;
+
+import java.lang.reflect.Member;
 
 public class SingUpController {
 
     @FXML
-    private TextField firstName;
+    private TextField firstNameText;
 
     @FXML
-    private TextField lastName;
+    private TextField lastNameText;
 
     @FXML
-    private TextField userName;
+    private TextField userNameText;
+
 
     @FXML
-    private RadioButton male;
+    private PasswordField passwordText;
 
     @FXML
-    private RadioButton female;
-
-    @FXML
-    private PasswordField password;
-
-    @FXML
-    private TextField phoneNumber;
+    private TextField phoneNumberText;
 
     @FXML
     private Button btnSignUp;
 
+    @FXML
+    private TextField adressText;
 
 
     @FXML
-    void initialize(){
-        DatabaseHander dbHandler = new DatabaseHander();
+    void initialize() {
+
+
         btnSignUp.setOnAction(event -> {
-            dbHandler.signUpUser(firstName.getText(),lastName.getText(),userName.getText(), password.getText(),phoneNumber.getText());
-                }
-                );
+            signUpNewUser();
+
+
+        });
 
     }
 
+    private void signUpNewUser() {
+        DatabaseHander dbHandler = new DatabaseHander();
+
+        String firstName = firstNameText.getText();
+        String lastName = lastNameText.getText();
+        String userName = userNameText.getText();
+        String password = passwordText.getText();
+        String phoneNumber = phoneNumberText.getText();
+        String adress = adressText.getText();
+
+        Members member = new Members(firstName, lastName, userName, password, phoneNumber, adress) {
+        };
+        dbHandler.signUpUser(member);
+
+    }
 }
