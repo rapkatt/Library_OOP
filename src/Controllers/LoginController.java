@@ -1,4 +1,4 @@
-package sample;
+package Controllers;
 
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
@@ -22,22 +22,18 @@ public class LoginController {
     private PasswordField txtPassword;
 
     @FXML
-    private Button btnSignUp;
+    private Button buttonSignUp;
 
     @FXML
     private Button btnSignIn;
 
     @FXML
-    void btnSignIn(ActionEvent event) {
-
-    }
-    @FXML
     void initialize(){
-        btnSignUp.setOnAction(event -> {
-            btnSignUp.getScene().getWindow().hide();
+        buttonSignUp.setOnAction(event -> {
+            buttonSignUp.getScene().getWindow().hide();
 
             FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/Registration.fxml"));
+            loader.setLocation(getClass().getResource("/fxml/SignUp.fxml"));
             try {
                 loader.load();
             } catch (IOException e) {
@@ -51,20 +47,19 @@ public class LoginController {
         });
         btnSignIn.setOnAction(event -> {
             btnSignIn.getScene().getWindow().hide();
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/signIn.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
+            String loginText = txtUsername.getText().trim();
+            String loginPassword = txtPassword.getText().trim();
+            
+            if(!loginText.equals("") && !loginPassword.equals("")){
+                loginUser(loginText, loginPassword);
             }
 
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
         });
+    }
+
+
+    private void loginUser(String loginText, String loginPassword) {
+
     }
 
 }
