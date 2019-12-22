@@ -8,24 +8,7 @@ import java.sql.PreparedStatement;
 import  java.sql.SQLException;
 import java.sql.ResultSet;
 
-public class DatabaseHander extends Configs {
-    Connection dbConnection;
-
-    public Connection getDbConnection()
-            throws ClassNotFoundException,SQLException{
-       // String url = "jdbc:mysql://localhost:3306/Peoples?autoReconnect=true&useSSL=false";
-        String user = "root";
-         String password = "0775580";
-
-    String connectionString = "jdbc:mysql://"+ dbHost + ":"
-              + dbPort + "/" + dbName;
-     Class.forName("com.mysql.cj.jdbc.Driver");
-
-        dbConnection = DriverManager.getConnection(connectionString,user,password);
-        System.out.println("Connected?");
-
-       return dbConnection;
-    }
+public class DbMembers extends ConnectionDb {
 
     public void signUpUser(Members members){
         String insert = "INSERT " + Const.USER_TABLE + "(" +

@@ -1,6 +1,6 @@
 package Controllers;
 
-import Db.DatabaseHander;
+import Db.DbMembers;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
@@ -45,7 +45,7 @@ public class SingUpController {
     }
 
     private void signUpNewUser() {
-        DatabaseHander dbHandler = new DatabaseHander();
+        DbMembers dbHandler = new DbMembers();
 
         String firstName = firstNameText.getText();
         String lastName = lastNameText.getText();

@@ -1,17 +1,13 @@
 package Controllers;
 
-import Db.DatabaseHander;
+import Db.DbMembers;
 import javafx.fxml.FXML;
-import javafx.fxml.FXMLLoader;
-import javafx.scene.Parent;
-import javafx.scene.Scene;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.stage.Stage;
+import javafx.scene.input.MouseEvent;
 import sample.Members;
 
-import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
@@ -31,16 +27,15 @@ public class LoginController extends MethodForWindow{
 
     @FXML
     void initialize(){
-        buttonSignUp.setOnAction(event -> {
-            openNewScene("/fxml/SignUp.fxml",btnSignIn);
-        });
+        buttonSignUp.setOnAction(event -> openNewScene("/fxml/SignUp.fxml",btnSignIn));
         btnSignIn.setOnAction(event -> {
-            btnSignIn.getScene().getWindow().hide();
             String loginText = txtUsername.getText().trim();
             String loginPassword = txtPassword.getText().trim();
             
             if(!loginText.equals("") && !loginPassword.equals("")){
                 loginUser(loginText, loginPassword);
+            }else{
+                animation();
             }
 
 
@@ -55,7 +50,7 @@ public class LoginController extends MethodForWindow{
 
 
     private void loginUser(String loginText, String loginPassword) {
-        DatabaseHander dbHandler = new DatabaseHander();
+        DbMembers dbHandler = new DbMembers();
         Members members = new Members();
         members.setUserName(loginText);
         members.setPassword(loginPassword);
@@ -73,7 +68,11 @@ public class LoginController extends MethodForWindow{
             counter++;
         }
         if (counter >=1){
-           openNewScene("/fxml/HomePage.fxml",btnSignIn);
+            if (txtUsername.getText().trim().equals("rapkatt")){
+                openNewScene("/fxml/AdminPanel.fxml",btnSignIn);
+            }else {
+           openNewScene("/fxml/Menu1.fxml",btnSignIn);}
+
 
         }else {
             animation();
