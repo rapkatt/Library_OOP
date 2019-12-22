@@ -3,24 +3,16 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/SignUp.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/WelcomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/WelcomePage.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/Configs.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/Const.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/DatabaseHander.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/LoginController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/Shake.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/SingUpController.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/members.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/sample/members.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/sample.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/User.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Books.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/SingUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SingUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Db/Const.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db/Const.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Db/DatabaseHander.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db/DatabaseHander.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/Shake.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/Shake.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/sample/members.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Members.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/WelcomePage.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/WelcomePage.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/User.java" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -232,7 +224,8 @@
       <updated>1359379246138</updated>
       <workItem from="1359379250712" duration="1302000" />
       <workItem from="1576747112592" duration="179000" />
-      <workItem from="1576747689261" duration="27743000" />
+      <workItem from="1576747689261" duration="30637000" />
+      <workItem from="1576992278991" duration="557000" />
     </task>
     <servers />
   </component>

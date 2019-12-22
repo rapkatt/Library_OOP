@@ -13,7 +13,7 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #14dbf5;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c9915a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
    <children>
       <Text fontSmoothingType="LCD" layoutY="31.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Information System " textAlignment="CENTER" wrappingWidth="267.99999925494194">
          <font>
@@ -38,7 +38,7 @@
       </GridPane>
       <ImageView fx:id="imageid" fitHeight="400.0" fitWidth="322.0" layoutX="278.0">
          <image>
-            <Image url="@../../../photo-1494809610410-160faaed4de0.jpeg" />
+            <Image url="@../image/photo-1494809610410-160faaed4de0.jpeg" />
          </image>
       </ImageView>
       <Button fx:id="buttonSignUp" layoutX="144.0" layoutY="187.0" mnemonicParsing="false" prefHeight="27.0" prefWidth="128.0" text="SignUp" />

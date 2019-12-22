@@ -15,7 +15,7 @@ import java.io.IOException;
 import java.sql.ResultSet;
 import java.sql.SQLException;
 
-public class LoginController {
+public class LoginController extends MethodForWindow{
 
     @FXML
     private TextField txtUsername;
@@ -32,20 +32,7 @@ public class LoginController {
     @FXML
     void initialize(){
         buttonSignUp.setOnAction(event -> {
-            buttonSignUp.getScene().getWindow().hide();
-
-            FXMLLoader loader = new FXMLLoader();
-            loader.setLocation(getClass().getResource("/fxml/SignUp.fxml"));
-            try {
-                loader.load();
-            } catch (IOException e) {
-                e.printStackTrace();
-            }
-
-            Parent root = loader.getRoot();
-            Stage stage = new Stage();
-            stage.setScene(new Scene(root));
-            stage.showAndWait();
+            openNewScene("/fxml/SignUp.fxml",btnSignIn);
         });
         btnSignIn.setOnAction(event -> {
             btnSignIn.getScene().getWindow().hide();
@@ -86,13 +73,16 @@ public class LoginController {
             counter++;
         }
         if (counter >=1){
-            System.out.println("Success!");
+           openNewScene("/fxml/HomePage.fxml",btnSignIn);
+
         }else {
             animation();
             System.out.println("adasdsd");
         }
 
 
+
     }
+
 
 }
