@@ -47,12 +47,12 @@ public class AddBookController {
         BookDb bookDb = new BookDb();
         String title = titleTxt.getText();
         String author = authorTxt.getText();
-        String name = nameTxt.getText();
+
         String subject = subjectTxt.getText();
         String edition = editionText.getText();
         int price = parseInt(priceTxt.getText());
         int No_OfBook = parseInt(numOfBookTxt.getText());
-        Books books  = new Books(title,author,name,subject,edition,price,No_OfBook);
+        Books books  = new Books(title,author,subject,edition,price,No_OfBook);
         bookDb.addBook(books);
 
     }

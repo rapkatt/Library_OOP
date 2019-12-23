@@ -14,7 +14,7 @@ public class Const {
     public static final String BOOK_TABLE ="tableBook";
     public static final String BOOK_ID = "idBooks";
     public static final String AUTHOR = "author";
-    public static final String NAME = "name";
+    public static final String TITLE = "title";
     public static final String SUBJECT = "subject";
     public static final String EDITION = "edition";
     public static final String PRICE = "price";
