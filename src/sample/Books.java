@@ -10,15 +10,15 @@ public class Books {
     private int No_OfBooks;
     private String edition;
 
-    public Books(String bookId, String author, String name, String subject, String status, int price, int no_OfBooks, String edition) {
+    public Books(String title, String author, String name, String subject, String edition, int price, int No_OfBooks) {
         this.bookId = bookId;
-        this.author = author;
-        this.name = name;
-        this.subject = subject;
+        this.author = this.author;
+        this.name = this.name;
+        this.subject = this.subject;
         this.status = status;
-        this.price = price;
-        No_OfBooks = no_OfBooks;
-        this.edition = edition;
+        this.price = this.price;
+        No_OfBooks = No_OfBooks;
+        this.edition = this.edition;
     }
 
     public String getBookId() {
