@@ -5,29 +5,24 @@ public class Books {
     private String title;
     private String author;
     private String edition;
-    private int price;
     private String subject;
-    private int No_OfBook;
+    private Integer numOfBook;
 
 
 
-    public Books(String title, String author, String subject, String edition, int price, int No_OfBook) {
+
+
+    public Books(String title, String author, String edition, String subject, Integer numOfBook) {
         this.title = title;
         this.author = author;
         this.edition = edition;
-        this.price = price;
         this.subject = subject;
-        this.No_OfBook = No_OfBook;
-
+        this.numOfBook = numOfBook;
     }
 
 
-    public void setPrice(int price) {
-        this.price = price;
-    }
-
-    public void setNo_OfBook(int No_OfBook) {
-        this.No_OfBook = No_OfBook;
+    public void setnumOfBook(int numOfBook) {
+        this.numOfBook = numOfBook;
     }
 
     public String getBookId() {
@@ -46,15 +41,12 @@ public class Books {
         return edition;
     }
 
-    public int getPrice() {
-        return price;
-    }
 
     public String getSubject() {
         return subject;
     }
 
     public int getNumOfBook() {
-        return No_OfBook;
+        return numOfBook;
     }
 }

@@ -17,8 +17,7 @@ public class Const {
     public static final String TITLE = "title";
     public static final String SUBJECT = "subject";
     public static final String EDITION = "edition";
-    public static final String PRICE = "price";
-    public static final String No_ofBooks = "no_ofBooks";
+    public static final String NUMOFBOOK = "numOfBook";
 
 
 

@@ -37,22 +37,22 @@ public class AddBookController {
     @FXML
     void initialize(){
         buttonAddAdmin.setOnAction(event -> {
-            addBook();
-
-
+            if(!titleTxt.getText().equals("") && !authorTxt.getText().equals("")  &&
+                    !editionText.getText().equals("")  && !numOfBookTxt.getText().equals("") &&
+                    !subjectTxt.getText().equals("")
+            )
+                addBook();
         });
-    }
+}
 
     public void addBook(){
         BookDb bookDb = new BookDb();
         String title = titleTxt.getText();
         String author = authorTxt.getText();
-
         String subject = subjectTxt.getText();
         String edition = editionText.getText();
-        int price = parseInt(priceTxt.getText());
-        int No_OfBook = parseInt(numOfBookTxt.getText());
-        Books books  = new Books(title,author,subject,edition,price,No_OfBook);
+        Integer numOfBook = parseInt(numOfBookTxt.getText());
+        Books books  = new Books(title,author,subject,edition,numOfBook);
         bookDb.addBook(books);
 
     }
