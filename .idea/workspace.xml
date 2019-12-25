@@ -2,11 +2,16 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/Controllers/MainPanesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/AdminPanelController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/AdminPanelController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/AdminPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/AdminPanel.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/AdminPanelController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AdminPanelController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/AdminPanel.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/AdminPanel.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/AdminPanelController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/EditBookController.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/EditBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/EditBook.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/AdminPanelController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/EditBookController.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/fxml/EditBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/EditBook.fxml" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -222,7 +227,7 @@
       <workItem from="1576747689261" duration="30637000" />
       <workItem from="1576992278991" duration="9083000" />
       <workItem from="1577085615175" duration="11640000" />
-      <workItem from="1577173535639" duration="13807000" />
+      <workItem from="1577173535639" duration="17571000" />
     </task>
     <servers />
   </component>

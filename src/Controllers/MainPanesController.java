@@ -1,21 +1,23 @@
 package Controllers;
 
 import Db.BookDb;
-import static Db.BookDb.bookList;
-import static java.lang.Integer.parseInt;
-
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.layout.Pane;
 import sample.Books;
 
-import javax.swing.*;
 import java.sql.SQLException;
-import java.util.logging.Logger;
-import java.util.logging.*;
 
-public class AdminPanelController extends MethodForWindow {
+import static Db.BookDb.bookList;
+import static Db.BookDb.deleteBook;
+import static java.lang.Integer.parseInt;
+
+public class MainPanesController extends MethodForWindow {
+
+    @FXML
+    private Pane mainPane;
 
     @FXML
     private TextField authorBookAdmin;
@@ -36,31 +38,59 @@ public class AdminPanelController extends MethodForWindow {
     private Button editButton;
 
     @FXML
-    private TableView<Books> tableId;
+    protected TableView<Books> tableId;
 
     @FXML
-    private TableColumn<Books, String> titleColum;
+    protected TableColumn<Books, String> titleColum;
 
     @FXML
-    private TableColumn<Books, String> authorId;
+    protected TableColumn<Books, String> authorId;
 
     @FXML
-    private TableColumn<Books, String> editionId;
+    protected TableColumn<Books, String> editionId;
 
     @FXML
-    private TableColumn<Books, String> subjectId;
+    protected TableColumn<Books, String> subjectId;
 
     @FXML
-    private TableColumn<Books, Integer> numOfBooksId;
+    protected TableColumn<Books, Integer> numOfBooksId;
 
     @FXML
-    void onClickAdd(ActionEvent event) {
-        openNewScene("/fxml/AddBook.fxml", addButton);
+    private Pane editPane;
+
+    @FXML
+    private TextField titleTxtEdit;
+
+    @FXML
+    private TextField authorTxtEdit;
+
+    @FXML
+    private TextField numOfBookTxtEdit;
+
+    @FXML
+    private TextField editionTextEdit;
+
+    @FXML
+    private TextField subjectTxtEdit;
+
+    @FXML
+    private Button buttonEditAdmin;
+
+    @FXML
+    void initialize(){
+        mainPane.toFront();
+        showBooks();
 
     }
 
     @FXML
+    void onClickAdd(ActionEvent event) {
+        openNewScene("/fxml/AddBook.fxml", addButton);
+    }
+
+    @FXML
     void onClickDelete(ActionEvent event) throws SQLException, ClassNotFoundException {
+
         String a = tableId.getSelectionModel().getSelectedItem().getTitle();
         String b = tableId.getSelectionModel().getSelectedItem().getAuthor();
         String c = tableId.getSelectionModel().getSelectedItem().getSubject();
@@ -74,17 +104,18 @@ public class AdminPanelController extends MethodForWindow {
     }
 
     @FXML
-    void onClickEdit(ActionEvent event) {
-        openNewScene("/fxml/EditBook.fxml", editButton);
-
+    void onClickEdit(ActionEvent event) throws SQLException, ClassNotFoundException {
+        Books books = tableId.getSelectionModel().getSelectedItem();
+        editPane.toFront();
+        deleteBook(books);
+        titleBookAdmin.setText(books.getTitle());
+        authorBookAdmin.setText(books.getAuthor());
+        editionId.setText(books.getEdition());
+        subjectId.setText(books.getSubject());
+        numOfBooksId.setText(String.valueOf(books.getNumOfBook()));
     }
 
-    @FXML
-    void initialize(){
-        showBooks();
-    }
-
-    private void showBooks() {
+    protected  void showBooks() {
         tableId.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
         BookDb bookDB = new BookDb();
         try {
@@ -103,6 +134,15 @@ public class AdminPanelController extends MethodForWindow {
         tableId.setItems(bookList);
     }
 
+    public void onClickUpdate(ActionEvent actionEvent) {
+        BookDb bookDb = new BookDb();
 
-
+        String a=titleTxtEdit.getText();
+        String b=authorTxtEdit.getText();
+        String c=editionTextEdit.getText();
+        String d=subjectTxtEdit.getText();
+        Integer e = parseInt(numOfBookTxtEdit.getText());
+        Books book = new Books(a,b,c,d,e);
+        bookDb.addBook(book);
+    }
 }

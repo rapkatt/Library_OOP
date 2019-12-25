@@ -6,7 +6,6 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
-import javafx.scene.input.MouseEvent;
 import sample.Members;
 
 import java.sql.ResultSet;
@@ -70,7 +69,7 @@ public class LoginController extends MethodForWindow{
         }
         if (counter >=1){
             if (txtUsername.getText().trim().equals("rapkatt")){
-                openNewScene("/fxml/AdminPanel.fxml",btnSignIn);
+                openNewScene("/fxml/MainPanes.fxml",btnSignIn);
             }else {
            openNewScene("/fxml/Menu1.fxml",btnSignIn);}
 
