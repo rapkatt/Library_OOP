@@ -53,4 +53,11 @@ public class BookDb extends ConnectionDb {
         }
         return allBooks;
     }
+
+    public static void deleteBook(Books books) throws SQLException, ClassNotFoundException {
+        String delete = "DELETE FROM "+ Const.BOOK_TABLE + " WHERE " + Const.TITLE + "= '"+ books.getTitle()+"'";
+        PreparedStatement select = getDbConnection().prepareStatement(delete);
+        select.executeUpdate(delete);
+
+    }
 }

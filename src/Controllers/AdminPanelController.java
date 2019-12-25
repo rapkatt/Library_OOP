@@ -10,6 +10,7 @@ import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
 import sample.Books;
 
+import javax.swing.*;
 import java.sql.SQLException;
 import java.util.logging.Logger;
 import java.util.logging.*;
@@ -56,7 +57,19 @@ public class AdminPanelController extends MethodForWindow {
     }
 
     @FXML
-    void onClickDelete(ActionEvent event) {
+    void onClickDelete(ActionEvent event) throws SQLException, ClassNotFoundException {
+        String a = tableId.getSelectionModel().getSelectedItem().getTitle();
+        String b = tableId.getSelectionModel().getSelectedItem().getAuthor();
+        String c = tableId.getSelectionModel().getSelectedItem().getSubject();
+        String d = tableId.getSelectionModel().getSelectedItem().getEdition();
+        Integer e = tableId.getSelectionModel().getSelectedItem().getNumOfBook();
+        tableId.getItems().removeAll(tableId.getSelectionModel().getSelectedItem());
+
+        Books books = new Books(a,b,c,d,e);
+        BookDb.deleteBook(books);
+        bookList.removeAll(books);
+
+
 
     }
     @FXML

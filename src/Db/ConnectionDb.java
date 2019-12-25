@@ -6,9 +6,9 @@ import java.sql.SQLException;
 
 public class ConnectionDb {
 
-    Connection dbConnection;
+    static Connection dbConnection;
 
-    public Connection getDbConnection()
+    public static Connection getDbConnection()
             throws ClassNotFoundException, SQLException {
         String connectionString = "jdbc:mysql://" + dbHost + ":"
                 + dbPort + "/" + dbName;
@@ -18,9 +18,9 @@ public class ConnectionDb {
 
         return dbConnection;
     }
-    protected String dbHost = "127.0.0.1";
-    protected String dbPort = "3306";
-    protected String dbUser = "root";
-    protected String dbPass = "0775580";
-    protected String dbName ="Library";
+    protected static String dbHost = "127.0.0.1";
+    protected static String dbPort = "3306";
+    protected static String dbUser = "root";
+    protected static String dbPass = "0775580";
+    protected static String dbName ="Library";
 }
