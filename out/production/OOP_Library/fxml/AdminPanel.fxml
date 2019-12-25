@@ -13,7 +13,7 @@
 
 <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #c9915a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.AdminPanelController">
    <children>
-      <AnchorPane layoutX="7.0" prefHeight="400.0" prefWidth="250.0">
+      <AnchorPane layoutX="7.0" layoutY="-7.0" prefHeight="411.0" prefWidth="218.0">
          <children>
             <TextField fx:id="authorBookAdmin" layoutX="7.0" layoutY="115.0" promptText="Author" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="115.0" />
             <TextField fx:id="titleBookAdmin" layoutX="7.0" layoutY="65.0" promptText="Title" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="65.0" />
@@ -46,6 +46,7 @@
             </ImageView>
             <Button fx:id="addButton" layoutX="7.0" layoutY="216.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="32.0" prefWidth="170.0" text="Add" />
             <Button fx:id="deleteButton" layoutX="7.0" layoutY="266.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="32.0" prefWidth="170.0" text="Delete" />
+            <Button fx:id="editButton" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="32.0" prefWidth="170.0" text="Edit" />
          </children>
       </AnchorPane>
       <AnchorPane layoutX="254.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #fff;">

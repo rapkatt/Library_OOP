@@ -33,6 +33,9 @@ public class AdminPanelController extends MethodForWindow {
     private Button deleteButton;
 
     @FXML
+    private Button editButton;
+
+    @FXML
     private TableView<Books> tableId;
 
     @FXML
@@ -68,10 +71,14 @@ public class AdminPanelController extends MethodForWindow {
         Books books = new Books(a,b,c,d,e);
         BookDb.deleteBook(books);
         bookList.removeAll(books);
+    }
 
-
+    @FXML
+    void onClickEdit(ActionEvent event) {
+        openNewScene("/fxml/EditBook.fxml", editButton);
 
     }
+
     @FXML
     void initialize(){
         showBooks();
