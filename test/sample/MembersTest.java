@@ -70,15 +70,10 @@ public class MembersTest {
     @Test
     public void setLocation() {
         user.setLocation("Bishkek");
-        assertEquals("Bishkek",user.getUserName());
+        assertEquals("Bishkek",user.getLocation());
 
     }
 
-    @Test
-    public void getNoBooksIssue() {
-        assertEquals(10,user.getNoBooksIssue());
-
-    }
 
     @Test
     public void setNoBooksIssue() {
