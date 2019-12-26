@@ -18,63 +18,6 @@
 
 <StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainPanesController">
    <children>
-      <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="700.0">
-         <children>
-            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #c9915a;">
-               <children>
-                  <AnchorPane layoutX="7.0" layoutY="-7.0" prefHeight="411.0" prefWidth="218.0">
-                     <children>
-                        <TextField fx:id="authorBookAdmin" layoutX="7.0" layoutY="115.0" promptText="Author" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="115.0" />
-                        <TextField fx:id="titleBookAdmin" layoutX="7.0" layoutY="65.0" promptText="Title" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="65.0" />
-                        <TextField fx:id="categorySearchAdmin" layoutX="7.0" layoutY="166.0" prefHeight="28.0" prefWidth="170.0" promptText="Category" style="-fx-background-color: #fff;" AnchorPane.topAnchor="166.0" />
-                        <Label layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="75.0" />
-                        <Text fontSmoothingType="LCD" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Information System " textAlignment="CENTER" wrappingWidth="267.99999925494194">
-                           <font>
-                              <Font size="18.0" />
-                           </font>
-                        </Text>
-                        <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="66.0">
-                           <image>
-                              <Image url="@../image/icons8-search-24.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="117.0">
-                           <image>
-                              <Image url="@../image/icons8-search-24.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="168.0">
-                           <image>
-                              <Image url="@../image/icons8-search-24.png" />
-                           </image>
-                        </ImageView>
-                        <ImageView fx:id="backID" fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0" onMouseClicked="#onClickBackId1">
-                           <image>
-                              <Image url="@../image/icons8-back-arrow-52.png" />
-                           </image>
-                        </ImageView>
-                        <Button fx:id="addButton" layoutX="7.0" layoutY="216.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="32.0" prefWidth="170.0" text="Add" />
-                        <Button fx:id="deleteButton" layoutX="7.0" layoutY="266.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="32.0" prefWidth="170.0" text="Delete" />
-                        <Button fx:id="editButton" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="32.0" prefWidth="170.0" text="Edit" />
-                     </children>
-                  </AnchorPane>
-                  <AnchorPane layoutX="254.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #fff;">
-                     <children>
-                        <TableView fx:id="tableId" layoutX="-10.0" prefHeight="400.0" prefWidth="456.0">
-                           <columns>
-                              <TableColumn fx:id="titleColum" prefWidth="81.0" text="Title" />
-                              <TableColumn fx:id="authorId" prefWidth="77.0" text="Author" />
-                              <TableColumn fx:id="editionId" prefWidth="93.0" text="Publisher" />
-                              <TableColumn fx:id="subjectId" prefWidth="91.0" text="Subject" />
-                              <TableColumn fx:id="numOfBooksId" prefWidth="111.0" text="Number of books" />
-                           </columns>
-                        </TableView>
-                     </children>
-                  </AnchorPane>
-               </children>
-            </AnchorPane>
-         </children>
-      </Pane>
       <Pane fx:id="editPane">
          <children>
             <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c9915a;">
@@ -120,6 +63,53 @@
                         <Image url="@../image/icons8-back-arrow-52.png" />
                      </image>
                   </ImageView>
+               </children>
+            </AnchorPane>
+         </children>
+      </Pane>
+      <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="700.0">
+         <children>
+            <AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="700.0" style="-fx-background-color: #c9915a;">
+               <children>
+                  <AnchorPane layoutX="7.0" layoutY="-7.0" prefHeight="411.0" prefWidth="218.0">
+                     <children>
+                        <TextField fx:id="authorBookAdmin" layoutX="7.0" layoutY="115.0" prefHeight="35.0" prefWidth="170.0" promptText="Author" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="261.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="115.0" />
+                        <TextField fx:id="titleBookAdmin" layoutX="7.0" layoutY="65.0" promptText="Title" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="7.0" AnchorPane.rightAnchor="91.0" AnchorPane.topAnchor="65.0" />
+                        <TextField fx:id="categorySearchAdmin" layoutX="7.0" layoutY="166.0" prefHeight="35.0" prefWidth="170.0" promptText="Category" style="-fx-background-color: #fff;" AnchorPane.topAnchor="166.0" />
+                        <Label layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="75.0" />
+                        <Text fontSmoothingType="LCD" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Information System " textAlignment="CENTER" wrappingWidth="267.99999925494194">
+                           <font>
+                              <Font size="18.0" />
+                           </font>
+                        </Text>
+                        <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="190.0" layoutY="71.0" onMouseClicked="#onClickSearchTitle">
+                           <image>
+                              <Image url="@../image/icons8-search-24.png" />
+                           </image>
+                        </ImageView>
+                        <ImageView fx:id="backID" fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0" onMouseClicked="#onClickBackId1">
+                           <image>
+                              <Image url="@../image/icons8-back-arrow-52.png" />
+                           </image>
+                        </ImageView>
+                        <Button fx:id="addButton" layoutX="7.0" layoutY="216.0" mnemonicParsing="false" onAction="#onClickAdd" prefHeight="32.0" prefWidth="170.0" text="Add" />
+                        <Button fx:id="deleteButton" layoutX="7.0" layoutY="266.0" mnemonicParsing="false" onAction="#onClickDelete" prefHeight="32.0" prefWidth="170.0" text="Delete" />
+                        <Button fx:id="editButton" layoutX="7.0" layoutY="318.0" mnemonicParsing="false" onAction="#onClickEdit" prefHeight="32.0" prefWidth="170.0" text="Edit" />
+                     </children>
+                  </AnchorPane>
+                  <AnchorPane layoutX="254.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #fff;">
+                     <children>
+                        <TableView fx:id="tableId" layoutX="-10.0" prefHeight="400.0" prefWidth="456.0">
+                           <columns>
+                              <TableColumn fx:id="titleColum" prefWidth="81.0" text="Title" />
+                              <TableColumn fx:id="authorId" prefWidth="77.0" text="Author" />
+                              <TableColumn fx:id="editionId" prefWidth="93.0" text="Publisher" />
+                              <TableColumn fx:id="subjectId" prefWidth="91.0" text="Subject" />
+                              <TableColumn fx:id="numOfBooksId" prefWidth="111.0" text="Number of books" />
+                           </columns>
+                        </TableView>
+                     </children>
+                  </AnchorPane>
                </children>
             </AnchorPane>
          </children>

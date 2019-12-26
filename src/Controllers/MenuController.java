@@ -67,6 +67,7 @@ public class MenuController extends MethodForWindow {
 
     @FXML
     void InfoClick(MouseEvent event) {
+        openNewScene("/fxml/Info.fxml",nothing);
 
     }
 

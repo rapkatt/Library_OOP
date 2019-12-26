@@ -35,17 +35,11 @@ public class LoginController extends MethodForWindow{
             if(!loginText.equals("") && !loginPassword.equals("")){
                 loginUser(loginText, loginPassword);
             }else{
-                animation();
+                shaker(txtUsername,txtPassword);
             }
 
 
         });
-    }
-    private void animation() {
-        Shake userLoginAnim = new Shake(txtUsername);
-        Shake userPassAnim = new Shake(txtPassword);
-        userLoginAnim.playAnim();
-        userPassAnim.playAnim();
     }
 
 
@@ -75,7 +69,7 @@ public class LoginController extends MethodForWindow{
 
 
         }else {
-            animation();
+            shaker(txtUsername,txtPassword);
             System.out.println("adasdsd");
         }
 

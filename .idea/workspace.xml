@@ -3,33 +3,22 @@
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/AddBookController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/AddBookController.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/Controller.class" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MainPanesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MainPanesController.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/AddBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/AdminPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MethodForWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MethodForWindow.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Db/BookDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Db/BookDb.class" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/BooksSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/BooksSearch.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/EditBook.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/MainPanes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/MainPanes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/Menu1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/Menu1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/Untitled.fxml" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/AddBookController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/AddBookController.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/Controller.java" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/MainPanesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainPanesController.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/Controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/SingUpController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/SingUpController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/AddBook.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/AddBook.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/AdminPanel.fxml" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Controllers/MethodForWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MethodForWindow.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/Db/BookDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db/BookDb.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxml/BooksSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/BooksSearch.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/EditBook.fxml" beforeDir="false" />
       <change beforePath="$PROJECT_DIR$/src/fxml/MainPanes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/MainPanes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/Menu1.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/Menu1.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/SignUp.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/SignUp.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/Untitled.fxml" beforeDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -250,7 +239,7 @@
       <workItem from="1576992278991" duration="9083000" />
       <workItem from="1577085615175" duration="11640000" />
       <workItem from="1577173535639" duration="19792000" />
-      <workItem from="1577331792320" duration="1483000" />
+      <workItem from="1577331792320" duration="8137000" />
     </task>
     <servers />
   </component>

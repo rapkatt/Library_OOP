@@ -1,6 +1,9 @@
 package Controllers;
 
 import Db.BookDb;
+import Db.Const;
+import javafx.collections.FXCollections;
+import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
@@ -82,7 +85,14 @@ public class MainPanesController extends MethodForWindow {
     @FXML
     void initialize(){
         mainPane.toFront();
-        showBooks();
+
+        BookDb bookDB = new BookDb();
+        try {
+            bookList = bookDB.getBooks();
+        } catch (SQLException | ClassNotFoundException e) {
+            e.printStackTrace();
+        }
+        showBooks(bookList);
 
     }
 
@@ -113,28 +123,22 @@ public class MainPanesController extends MethodForWindow {
         deleteBook(books);
         titleBookAdmin.setText(books.getTitle());
         authorBookAdmin.setText(books.getAuthor());
-        editionId.setText(books.getEdition());
-        subjectId.setText(books.getSubject());
-        numOfBooksId.setText(String.valueOf(books.getNumOfBook()));
+        editionTextEdit.setText(books.getEdition());
+        subjectTxtEdit.setText(books.getSubject());
+        numOfBookTxtEdit.setText(String.valueOf(books.getNumOfBook()));
+
     }
 
-    protected  void showBooks() {
+    protected  void showBooks(ObservableList<Books> books) {
         tableId.getSelectionModel().setSelectionMode(SelectionMode.MULTIPLE);
-        BookDb bookDB = new BookDb();
-        try {
-            bookList = bookDB.getBooks();
-        } catch (SQLException e) {
-            e.printStackTrace();
-        } catch (ClassNotFoundException e) {
-            e.printStackTrace();
-        }
+
         titleColum.setCellValueFactory(new PropertyValueFactory<Books, String>("title"));
         authorId.setCellValueFactory(new PropertyValueFactory<Books,String>("author"));
         editionId.setCellValueFactory(new PropertyValueFactory<Books,String>("edition"));
         subjectId.setCellValueFactory(new PropertyValueFactory<Books, String>("subject"));
         numOfBooksId.setCellValueFactory(new PropertyValueFactory<Books,Integer>("numOfBook"));
 
-        tableId.setItems(bookList);
+        tableId.setItems(books);
     }
 
     public void onClickUpdate(ActionEvent actionEvent) {
@@ -147,11 +151,19 @@ public class MainPanesController extends MethodForWindow {
         Integer e = parseInt(numOfBookTxtEdit.getText());
         Books book = new Books(a,b,c,d,e);
         bookDb.addBook(book);
+
+        titleTxtEdit.clear();
+        authorTxtEdit.clear();
+        editionTextEdit.clear();
+        subjectTxtEdit.clear();
+        numOfBookTxtEdit.clear();
     }
 
-    public void onClickBackEditBook(MouseEvent mouseEvent) {
+    public void onClickBackEditBook(MouseEvent mouseEvent) throws SQLException, ClassNotFoundException {
         mainPane.toFront();
-        showBooks();
+        BookDb bookDb = new BookDb();
+        bookList = bookDb.getBooks();
+        showBooks(bookList);
     }
 
     public void onClickBackId1(MouseEvent mouseEvent) {
@@ -159,17 +171,19 @@ public class MainPanesController extends MethodForWindow {
     }
 
 
-//    @FXML
-//    void onClickBackID(MouseEvent event) {
-//        openNewScene("/fxml/WelcomePage.fxml", addButton);
-//
-//    }
-//
-//    @FXML
-//    void onClickBackID2(MouseEvent event) {
-//        mainPane.toFront();
-//        showBooks();
-//
-//    }
+    public void onClickSearchTitle(MouseEvent mouseEvent) throws SQLException, ClassNotFoundException {
+        ObservableList<Books> books = FXCollections.observableArrayList();
+        if(titleBookAdmin.getText().isEmpty() && authorBookAdmin.getText().isEmpty() && categorySearchAdmin.getText().isEmpty()){
+            books = BookDb.getBooks();
+        }else if(!titleBookAdmin.getText().isEmpty() && authorBookAdmin.getText().isEmpty() && categorySearchAdmin.getText().isEmpty()) {
+            books = BookDb.finder(Const.TITLE, titleBookAdmin.getText().trim());
+        }else if(titleBookAdmin.getText().isEmpty() && !authorBookAdmin.getText().isEmpty() && categorySearchAdmin.getText().isEmpty()){
+            books = BookDb.finder(Const.AUTHOR, authorBookAdmin.getText().trim());
+        }else if(titleBookAdmin.getText().isEmpty() && authorBookAdmin.getText().isEmpty() && !categorySearchAdmin.getText().isEmpty()){
+            books = BookDb.finder(Const.SUBJECT, categorySearchAdmin.getText().trim());
+        }else if(titleBookAdmin.getText().isEmpty() && authorBookAdmin.getText().isEmpty() && !categorySearchAdmin.getText().isEmpty()){
 
+        }
+        showBooks(books);
+    }
 }

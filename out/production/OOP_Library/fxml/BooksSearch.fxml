@@ -2,6 +2,8 @@
 
 <?import javafx.scene.control.Button?>
 <?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
 <?import javafx.scene.control.TextField?>
 <?import javafx.scene.image.Image?>
 <?import javafx.scene.image.ImageView?>
@@ -9,30 +11,20 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="600.0" style="-fx-background-color: #c9915a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.LoginController">
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" nodeOrientation="LEFT_TO_RIGHT" prefHeight="400.0" prefWidth="712.0" style="-fx-background-color: #c9915a;" xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.UserController">
    <children>
       <AnchorPane layoutX="7.0" prefHeight="400.0" prefWidth="250.0">
          <children>
-            <TextField fx:id="authorBook" layoutX="4.0" layoutY="115.0" promptText="Author" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="115.0" />
-            <TextField fx:id="titleBook" layoutX="4.0" layoutY="65.0" promptText="Title" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="65.0" />
-            <TextField fx:id="categorySearch" layoutX="3.0" layoutY="166.0" prefHeight="28.0" prefWidth="170.0" promptText="Category" style="-fx-background-color: #fff;" AnchorPane.topAnchor="166.0" />
+            <TextField fx:id="authorBookUser" layoutX="4.0" layoutY="115.0" promptText="Author" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="259.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="115.0" />
+            <TextField fx:id="titleBookUser" layoutX="4.0" layoutY="65.0" promptText="Title" style="-fx-background-color: #fff;" AnchorPane.bottomAnchor="311.0" AnchorPane.leftAnchor="4.0" AnchorPane.rightAnchor="94.0" AnchorPane.topAnchor="65.0" />
+            <TextField fx:id="categorySearchUSer" layoutX="3.0" layoutY="166.0" prefHeight="28.0" prefWidth="170.0" promptText="Category" style="-fx-background-color: #fff;" AnchorPane.topAnchor="166.0" />
             <Label layoutX="14.0" layoutY="32.0" prefHeight="17.0" prefWidth="75.0" />
             <Text fontSmoothingType="LCD" layoutY="39.0" strokeType="OUTSIDE" strokeWidth="0.0" text="Library Information System " textAlignment="CENTER" wrappingWidth="267.99999925494194">
                <font>
                   <Font size="18.0" />
                </font>
             </Text>
-            <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="66.0">
-               <image>
-                  <Image url="@../image/icons8-search-24.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="117.0">
-               <image>
-                  <Image url="@../image/icons8-search-24.png" />
-               </image>
-            </ImageView>
-            <ImageView fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="168.0">
+            <ImageView fx:id="findUser" fitHeight="24.0" fitWidth="23.0" layoutX="180.0" layoutY="66.0" onMouseClicked="#onClickFindUser">
                <image>
                   <Image url="@../image/icons8-search-24.png" />
                </image>
@@ -42,9 +34,20 @@
                   <Image url="@../image/icons8-back-arrow-52.png" />
                </image>
             </ImageView>
-            <Button fx:id="butBook" layoutX="4.0" layoutY="217.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" text="BUY" />
+            <Button fx:id="butBookUser" layoutX="4.0" layoutY="217.0" mnemonicParsing="false" prefHeight="32.0" prefWidth="170.0" text="BUY" />
          </children>
       </AnchorPane>
-      <AnchorPane layoutX="257.0" layoutY="-1.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #fff;" />
+      <AnchorPane layoutX="257.0" layoutY="-1.0" prefHeight="400.0" prefWidth="350.0" style="-fx-background-color: #fff;">
+         <children>
+            <TableView fx:id="tableIdUSer" prefHeight="400.0" prefWidth="456.0">
+               <columns>
+                  <TableColumn fx:id="titleColumUser" prefWidth="81.0" text="Title" />
+                  <TableColumn fx:id="authorId" prefWidth="77.0" text="Author" />
+                  <TableColumn fx:id="editionId" prefWidth="93.0" text="Publisher" />
+                  <TableColumn fx:id="subjectIdUser" prefWidth="91.0" text="Subject" />
+                  <TableColumn fx:id="numOfBooksIdUser" prefWidth="111.0" text="Number of books" />
+               </columns>
+            </TableView>
+         </children></AnchorPane>
    </children>
 </AnchorPane>
