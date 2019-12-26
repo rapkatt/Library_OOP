@@ -2,23 +2,14 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="cdb932d9-7e58-4d94-93a9-e7b232ef17da" name="Default" comment="">
+      <change afterPath="$PROJECT_DIR$/src/sample/BooksTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/misc.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/misc.xml" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/Controller.class" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/LoginController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MainPanesController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MainPanesController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MenuController.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MenuController.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MethodForWindow.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/MethodForWindow.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Db/BookDb.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Db/BookDb.class" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/BooksSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/BooksSearch.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/fxml/MainPanes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/fxml/MainPanes.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/Controller.java" beforeDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/LoginController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/LoginController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/MainPanesController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MainPanesController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/MenuController.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MenuController.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Controllers/MethodForWindow.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Controllers/MethodForWindow.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/Db/BookDb.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/Db/BookDb.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/BooksSearch.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/BooksSearch.fxml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/src/fxml/MainPanes.fxml" beforeDir="false" afterPath="$PROJECT_DIR$/src/fxml/MainPanes.fxml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/OOP_Library.iml" beforeDir="false" afterPath="$PROJECT_DIR$/OOP_Library.iml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" beforeDir="false" afterPath="$PROJECT_DIR$/out/production/OOP_Library/Controllers/SingUpController$1.class" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/META-INF/OOP_Library.kotlin_module" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/out/production/OOP_Library/sample/members.class" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/src/sample/Books.java" beforeDir="false" afterPath="$PROJECT_DIR$/src/sample/Books.java" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -89,6 +80,7 @@
       <list>
         <option value="FxmlFile" />
         <option value="Class" />
+        <option value="JUnit4 Test Class" />
       </list>
     </option>
   </component>
@@ -107,6 +99,7 @@
     <option name="STATE" value="0" />
   </component>
   <component name="PropertiesComponent">
+    <property name="Downloaded.Files.Path.Enabled" value="false" />
     <property name="GoToClass.includeLibraries" value="false" />
     <property name="GoToClass.toSaveIncludeLibraries" value="false" />
     <property name="GoToFile.includeJavaFiles" value="false" />
@@ -114,11 +107,23 @@
     <property name="MemberChooser.showClasses" value="true" />
     <property name="MemberChooser.sorted" value="false" />
     <property name="OverrideImplement.combined" value="false" />
+    <property name="Repository.Attach.Annotations" value="false" />
+    <property name="Repository.Attach.JavaDocs" value="false" />
+    <property name="Repository.Attach.Sources" value="false" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrary" value="JUnit4" />
+    <property name="com.intellij.testIntegration.createTest.CreateTestDialog.defaultLibrarySuperClass.JUnit4" value="" />
+    <property name="create.test.in.the.same.root" value="true" />
     <property name="dynamic.classpath" value="false" />
-    <property name="last_opened_file_path" value="$PROJECT_DIR$/src/image" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
+    <property name="node.js.detected.package.eslint" value="true" />
+    <property name="node.js.detected.package.tslint" value="true" />
+    <property name="node.js.path.for.package.eslint" value="project" />
+    <property name="node.js.path.for.package.tslint" value="project" />
+    <property name="node.js.selected.package.eslint" value="(autodetect)" />
+    <property name="node.js.selected.package.tslint" value="(autodetect)" />
     <property name="project.structure.last.edited" value="Libraries" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -127,12 +132,18 @@
     <property name="settings.editor.selected.configurable" value="configurable.group.build.tools" />
   </component>
   <component name="RecentsManager">
+    <key name="CreateTestDialog.RecentsKey">
+      <recent name="sample" />
+    </key>
     <key name="MoveFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/image" />
       <recent name="$PROJECT_DIR$/src/fxml" />
     </key>
     <key name="CopyFile.RECENT_KEYS">
       <recent name="$PROJECT_DIR$/src/image" />
+    </key>
+    <key name="CreateTestDialog.Recents.Supers">
+      <recent name="" />
     </key>
     <key name="CreateClassDialog.RecentsKey">
       <recent name="sample" />
@@ -240,6 +251,8 @@
       <workItem from="1577085615175" duration="11640000" />
       <workItem from="1577173535639" duration="19792000" />
       <workItem from="1577331792320" duration="8137000" />
+      <workItem from="1577357899603" duration="1590000" />
+      <workItem from="1577359510772" duration="2053000" />
     </task>
     <servers />
   </component>
