@@ -4,11 +4,12 @@ import Db.BookDb;
 import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import sample.Books;
 
 import static java.lang.Integer.parseInt;
 
-public class AddBookController {
+public class AddBookController  extends MethodForWindow{
 
     @FXML
     private TextField titleTxt;
@@ -57,5 +58,13 @@ public class AddBookController {
 
     }
 
+    public void onClickAddBook(MouseEvent mouseEvent) {
+        openNewScene("/fxml/AdminPanel.fxml", buttonAddAdmin);
+    }
+
+    public void onClickBackAddBook(MouseEvent mouseEvent) {
+        openNewScene("/fxml/MainPanes.fxml", buttonAddAdmin);
+
+    }
 }
 

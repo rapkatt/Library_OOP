@@ -5,6 +5,7 @@ import javafx.event.ActionEvent;
 import javafx.fxml.FXML;
 import javafx.scene.control.*;
 import javafx.scene.control.cell.PropertyValueFactory;
+import javafx.scene.input.MouseEvent;
 import javafx.scene.layout.Pane;
 import sample.Books;
 
@@ -72,6 +73,8 @@ public class MainPanesController extends MethodForWindow {
 
     @FXML
     private TextField subjectTxtEdit;
+
+
 
     @FXML
     private Button buttonEditAdmin;
@@ -145,4 +148,28 @@ public class MainPanesController extends MethodForWindow {
         Books book = new Books(a,b,c,d,e);
         bookDb.addBook(book);
     }
+
+    public void onClickBackEditBook(MouseEvent mouseEvent) {
+        mainPane.toFront();
+        showBooks();
+    }
+
+    public void onClickBackId1(MouseEvent mouseEvent) {
+        openNewScene("/fxml/WelcomePage.fxml",buttonEditAdmin);
+    }
+
+
+//    @FXML
+//    void onClickBackID(MouseEvent event) {
+//        openNewScene("/fxml/WelcomePage.fxml", addButton);
+//
+//    }
+//
+//    @FXML
+//    void onClickBackID2(MouseEvent event) {
+//        mainPane.toFront();
+//        showBooks();
+//
+//    }
+
 }

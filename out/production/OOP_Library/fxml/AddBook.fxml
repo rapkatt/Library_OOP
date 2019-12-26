@@ -50,5 +50,10 @@
             <Image url="@../image/tim-van-cleef-1JBOZwuW7sI-unsplash-3.jpg" />
          </image>
       </ImageView>
+      <ImageView fx:id="backId3" fitHeight="27.0" fitWidth="31.0" layoutX="14.0" layoutY="11.0" onMouseClicked="#onClickBackAddBook">
+         <image>
+            <Image url="@../image/icons8-back-arrow-52.png" />
+         </image>
+      </ImageView>
    </children>
 </AnchorPane>

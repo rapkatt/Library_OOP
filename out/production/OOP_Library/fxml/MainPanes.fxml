@@ -16,7 +16,6 @@
 <?import javafx.scene.text.Font?>
 <?import javafx.scene.text.Text?>
 
-
 <StackPane xmlns="http://javafx.com/javafx/8.0.171" xmlns:fx="http://javafx.com/fxml/1" fx:controller="Controllers.MainPanesController">
    <children>
       <Pane fx:id="mainPane" prefHeight="200.0" prefWidth="700.0">
@@ -49,7 +48,7 @@
                               <Image url="@../image/icons8-search-24.png" />
                            </image>
                         </ImageView>
-                        <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0">
+                        <ImageView fx:id="backID" fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0" onMouseClicked="#onClickBackId1">
                            <image>
                               <Image url="@../image/icons8-back-arrow-52.png" />
                            </image>
@@ -114,6 +113,11 @@
                   <ImageView fitHeight="401.0" fitWidth="422.0" layoutX="278.0">
                      <image>
                         <Image url="@../image/tim-van-cleef-1JBOZwuW7sI-unsplash-3.jpg" />
+                     </image>
+                  </ImageView>
+                  <ImageView fx:id="BackId" fitHeight="32.0" fitWidth="31.0" layoutX="7.0" layoutY="8.0" onMouseClicked="#onClickBackEditBook">
+                     <image>
+                        <Image url="@../image/icons8-back-arrow-52.png" />
                      </image>
                   </ImageView>
                </children>

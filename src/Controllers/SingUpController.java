@@ -5,9 +5,10 @@ import javafx.fxml.FXML;
 import javafx.scene.control.Button;
 import javafx.scene.control.PasswordField;
 import javafx.scene.control.TextField;
+import javafx.scene.input.MouseEvent;
 import sample.Members;
 
-public class SingUpController {
+public class SingUpController extends MethodForWindow{
 
     @FXML
     private TextField firstNameText;
@@ -58,5 +59,9 @@ public class SingUpController {
         };
         dbHandler.signUpUser(member);
 
+    }
+
+    public void onClickBackSignUp(MouseEvent mouseEvent) {
+        openNewScene("/fxml/WelcomePage.fxml",btnSignUp);
     }
 }

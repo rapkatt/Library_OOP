@@ -37,7 +37,7 @@
                   <Image url="@../image/icons8-search-24.png" />
                </image>
             </ImageView>
-            <ImageView fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0">
+            <ImageView fx:id="backId5" fitHeight="23.0" fitWidth="23.0" layoutX="3.0" layoutY="21.0" onMouseClicked="#onClickBackBookSearch">
                <image>
                   <Image url="@../image/icons8-back-arrow-52.png" />
                </image>
