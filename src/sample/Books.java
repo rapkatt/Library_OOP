@@ -49,4 +49,28 @@ public class Books {
     public int getNumOfBook() {
         return numOfBook;
     }
+
+    public void setBookId(String bookId) {
+        this.bookId = bookId;
+    }
+
+    public void setTitle(String title) {
+        this.title = title;
+    }
+
+    public void setAuthor(String author) {
+        this.author = author;
+    }
+
+    public void setEdition(String edition) {
+        this.edition = edition;
+    }
+
+    public void setSubject(String subject) {
+        this.subject = subject;
+    }
+
+    public void setNumOfBook(Integer numOfBook) {
+        this.numOfBook = numOfBook;
+    }
 }
