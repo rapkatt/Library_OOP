@@ -1,4 +1,4 @@
-package Db;
+package DataBase;
 
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
@@ -81,5 +81,45 @@ public class BookDb extends ConnectionDb {
 
         }
         return Books;
+    }
+
+    public static ObservableList<Books> finder2(String n, String m, String n1, String m1) throws SQLException, ClassNotFoundException {
+        String select = "SELECT * FROM " + Const.BOOK_TABLE + " WHERE "+n+" LIKE  '% "+m+" %' AND "+n1+" LIKE  '% "+m1+" %'";
+        PreparedStatement pop = getDbConnection().prepareStatement(select);
+        ResultSet set = pop.executeQuery(select);
+
+        ObservableList<Books> allBooks= FXCollections.observableArrayList();
+
+        while(set.next()){
+            String a = set.getString(Const.TITLE);
+            String b = set.getString(Const.AUTHOR);
+            String c = set.getString(Const.EDITION);
+            String d = set.getString(Const.SUBJECT);
+            int e = set.getInt(Const.NUMOFBOOK);
+
+            Books book = new Books(a,b,c,d,e);
+            allBooks.add(book);
+
+        }return allBooks;
+    }
+
+    public static ObservableList<Books> finder3(String n, String m, String n1, String m1, String n2, String m2) throws SQLException, ClassNotFoundException {
+        String select = "SELECT * FROM " + Const.BOOK_TABLE + " WHERE "+n+" LIKE  '% "+ m+" %' OR "+n1+" LIKE  '% "+m1+" %' OR "+n2+" LIKE "+m2;
+        PreparedStatement st = getDbConnection().prepareStatement(select);
+        ResultSet resset = st.executeQuery(select);
+
+        ObservableList<Books> allBooks= FXCollections.observableArrayList();
+
+        while(resset.next()){
+            String a = resset.getString(Const.TITLE);
+            String b = resset.getString(Const.AUTHOR);
+            String c = resset.getString(Const.EDITION);
+            String d = resset.getString(Const.SUBJECT);
+            int e = resset.getInt(Const.NUMOFBOOK);
+
+            Books book = new Books(a,b,c,d,e);
+            allBooks.add(book);
+
+        }return allBooks;
     }
 }

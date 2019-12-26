@@ -1,4 +1,4 @@
-package Db;
+package DataBase;
 
 public class Const {
     public static final String USER_TABLE = "users";

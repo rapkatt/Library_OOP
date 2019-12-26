@@ -1,7 +1,7 @@
 package Controllers;
 
-import Db.BookDb;
-import Db.Const;
+import DataBase.BookDb;
+import DataBase.Const;
 import javafx.collections.FXCollections;
 import javafx.collections.ObservableList;
 import javafx.event.ActionEvent;
@@ -14,8 +14,8 @@ import sample.Books;
 
 import java.sql.SQLException;
 
-import static Db.BookDb.bookList;
-import static Db.BookDb.deleteBook;
+import static DataBase.BookDb.bookList;
+import static DataBase.BookDb.deleteBook;
 import static java.lang.Integer.parseInt;
 
 public class MainPanesController extends MethodForWindow {
@@ -121,8 +121,8 @@ public class MainPanesController extends MethodForWindow {
         Books books = tableId.getSelectionModel().getSelectedItem();
         editPane.toFront();
         deleteBook(books);
-        titleBookAdmin.setText(books.getTitle());
-        authorBookAdmin.setText(books.getAuthor());
+        titleTxtEdit.setText(books.getTitle());
+        authorTxtEdit.setText(books.getAuthor());
         editionTextEdit.setText(books.getEdition());
         subjectTxtEdit.setText(books.getSubject());
         numOfBookTxtEdit.setText(String.valueOf(books.getNumOfBook()));

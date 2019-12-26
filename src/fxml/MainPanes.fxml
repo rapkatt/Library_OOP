@@ -101,10 +101,10 @@
                      <children>
                         <TableView fx:id="tableId" layoutX="-10.0" prefHeight="400.0" prefWidth="456.0">
                            <columns>
-                              <TableColumn fx:id="titleColum" prefWidth="81.0" text="Title" />
-                              <TableColumn fx:id="authorId" prefWidth="77.0" text="Author" />
+                              <TableColumn fx:id="titleColumUser" prefWidth="81.0" text="Title" />
+                              <TableColumn fx:id="authorColumUser" prefWidth="77.0" text="Author" />
                               <TableColumn fx:id="editionId" prefWidth="93.0" text="Publisher" />
-                              <TableColumn fx:id="subjectId" prefWidth="91.0" text="Subject" />
+                              <TableColumn fx:id="subjectColumUser" prefWidth="91.0" text="Subject" />
                               <TableColumn fx:id="numOfBooksId" prefWidth="111.0" text="Number of books" />
                            </columns>
                         </TableView>
